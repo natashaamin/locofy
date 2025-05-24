@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/locofy/static/js/main.c0819b2c.js",
+    "static/js/488.6f25f367.chunk.js": "/locofy/static/js/488.6f25f367.chunk.js",
+    "index.html": "/locofy/index.html",
+    "main.c0819b2c.js.map": "/locofy/static/js/main.c0819b2c.js.map",
+    "488.6f25f367.chunk.js.map": "/locofy/static/js/488.6f25f367.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.c0819b2c.js"
+  ]
+}
