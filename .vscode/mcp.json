@@ -1,0 +1,16 @@
+{
+    "servers": {
+      "locofy": {
+        "args": [
+          "-y",
+          "@locofy/mcp@latest"
+        ],
+        "command": "npx",
+        "env": {
+          "PERSONAL_ACCESS_TOKEN": "lpat_v1_UfP70sVmt-S1YgzKhIJBHfsDRG-B0x71YS_q3sL_vkv-6EDOii6d0Pb8LnxVILGVyDIQW-xTirHHzp0wvYVJuNaaEdg8qBt5BjYWffLGQZg=",
+          "PROJECT_ID": "2xX2ldqhPG7OmGx1rTbANEMgv5E",
+          "IDE_SOURCE": "copilot"
+        }
+      }
+    }
+  }
