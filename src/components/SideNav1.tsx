@@ -6,142 +6,192 @@ export type SideNav1Type = {
 };
 
 const Rectangle2 = styled.div`
-  width: 294px;
-  height: 3140px;
-  position: relative;
-  background-color: var(--color-midnightblue);
-  border: 2px solid var(--color-whitesmoke-300);
-  box-sizing: border-box;
-  display: none;
-`;
-const SideNavChild = styled.img`
-  height: 54px;
-  width: 273px;
-  position: relative;
-  display: none;
-`;
-const Oval4Icon = styled.img`
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+  background-color: var(--color-midnightblue);
+  border: 2px solid var(--color-whitesmoke-300);
+  box-sizing: border-box;
+  width: 294px;
+  height: 3223px;
 `;
-const OverlayDivider = styled.b`
+const SideNavChild = styled.img`
   position: absolute;
-  top: 4px;
-  left: 3px;
+  top: 124px;
+  left: 0px;
+  width: 273px;
+  height: 54px;
+`;
+const Oval4Icon = styled.img`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+`;
+const B = styled.b`
+  position: absolute;
+  width: 66.67%;
+  top: calc(50% - 6px);
+  left: 14.29%;
   letter-spacing: -0.43px;
   display: inline-block;
-  width: 14px;
-  min-width: 14px;
-  z-index: 2;
 `;
-const Div = styled.div`
-  position: relative;
-  display: none;
+const Oval4Parent = styled.div`
+  position: absolute;
+  height: 0.62%;
+  width: 7.24%;
+  top: 6.46%;
+  right: 13.1%;
+  bottom: 92.92%;
+  left: 79.66%;
+  text-align: center;
+  font-size: var(--font-size-8);
+`;
+const Oval4Group = styled.div`
+  position: absolute;
+  height: 0.62%;
+  width: 7.24%;
+  top: 10.56%;
+  right: 13.1%;
+  bottom: 88.82%;
+  left: 79.66%;
   text-align: center;
   font-size: var(--font-size-8);
 `;
 const Overview1 = styled.div`
-  width: 99px;
-  position: relative;
+  position: absolute;
+  top: 142px;
+  left: 91.5px;
   display: inline-block;
-  z-index: 2;
+  width: 99px;
+  height: 27px;
 `;
-const Wallet1 = styled.div`
-  width: 99px;
-  position: relative;
+const Wallet2 = styled.div`
+  position: absolute;
+  top: 277px;
+  left: 92px;
   display: inline-block;
-  z-index: 1;
+  width: 99px;
+  height: 27px;
 `;
 const Transactions2 = styled.div`
-  width: 139px;
-  position: relative;
+  position: absolute;
+  top: 341px;
+  left: 92px;
   display: inline-block;
-  z-index: 1;
+  width: 139px;
+  height: 27px;
 `;
 const Statistics1 = styled.div`
-  align-self: stretch;
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  top: 408px;
+  left: 92.5px;
+  display: inline-block;
+  width: 139px;
+  height: 27px;
+`;
+const Settings = styled.div`
+  position: absolute;
+  top: 476px;
+  left: 92.5px;
+  display: inline-block;
+  width: 139px;
+  height: 27px;
 `;
 const Referral = styled.div`
-  width: 74px;
-  position: relative;
+  position: absolute;
+  top: 599px;
+  left: 139px;
   font-size: var(--font-size-14);
   display: inline-block;
-  z-index: 1;
+  width: 74px;
+  height: 27px;
 `;
 const Logout = styled.div`
-  align-self: stretch;
-  position: relative;
+  position: absolute;
+  top: 647.6px;
+  left: 139px;
   font-size: var(--font-size-14);
-  z-index: 1;
+  display: inline-block;
+  width: 139px;
+  height: 27px;
+`;
+const Trade1 = styled.div`
+  position: absolute;
+  top: 209px;
+  left: 91.5px;
+  display: inline-block;
+  width: 99px;
+  height: 27px;
 `;
 const SideNavItem = styled.img`
-  width: 15px;
-  height: 10px;
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  height: 0.31%;
+  width: 5.17%;
+  top: 4.54%;
+  right: 75.86%;
+  bottom: 95.15%;
+  left: 18.97%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
 `;
 const SideNavInner = styled.img`
+  position: absolute;
+  top: 212px;
+  left: 57px;
   width: 14.6px;
   height: 13.1px;
-  position: relative;
-  z-index: 1;
 `;
 const GroupIcon = styled.img`
+  position: absolute;
+  top: 280px;
+  left: 57px;
   width: 15.3px;
   height: 11px;
-  position: relative;
-  z-index: 1;
 `;
 const GroupIcon1 = styled.img`
-  width: 16px;
-  height: 15.8px;
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  height: 0.49%;
+  width: 5.52%;
+  top: 10.63%;
+  right: 75.17%;
+  bottom: 88.88%;
+  left: 19.31%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
 `;
 const SideNavChild1 = styled.img`
-  height: 17.3px;
+  position: absolute;
+  top: 409px;
+  left: 59px;
   width: 10.3px;
-  position: relative;
-  z-index: 1;
+  height: 17.3px;
 `;
 const SideNavChild2 = styled.img`
+  position: absolute;
+  top: 479px;
+  left: 56px;
   width: 16px;
   height: 13.8px;
-  position: relative;
-  z-index: 1;
 `;
 const SideNavRoot = styled.div`
-  width: 294px;
-  flex: 0.177;
-  background-color: var(--color-midnightblue);
-  border: 2px solid var(--color-whitesmoke-300);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
-  padding: 41px var(--padding-8) 2550.4px 0px;
-  gap: var(--gap-30);
-  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 290px;
+  height: 3219px;
   text-align: left;
   font-size: var(--font-size-12);
   color: var(--color-white);
   font-family: var(--font-poppins);
-  @media screen and (max-width: 1125px) {
-    padding-top: var(--padding-20);
-    padding-bottom: 1078px;
-    box-sizing: border-box;
-  }
-  @media screen and (max-width: 800px) {
-    padding-bottom: 701px;
-    box-sizing: border-box;
-  }
 `;
 
 const SideNav1: FunctionComponent<SideNav1Type> = memo(({ className = "" }) => {
@@ -149,22 +199,22 @@ const SideNav1: FunctionComponent<SideNav1Type> = memo(({ className = "" }) => {
     <SideNavRoot className={className}>
       <Rectangle2 />
       <SideNavChild alt="" src="/rectangle-274.svg" />
-      <Div>
-        <Oval4Icon loading="lazy" alt="" src="/oval-4-1.svg" />
-        <OverlayDivider>19</OverlayDivider>
-      </Div>
-      <Div>
+      <Oval4Parent>
         <Oval4Icon alt="" src="/oval-4-1.svg" />
-        <OverlayDivider>10</OverlayDivider>
-      </Div>
+        <B>19</B>
+      </Oval4Parent>
+      <Oval4Group>
+        <Oval4Icon alt="" src="/oval-4-1.svg" />
+        <B>10</B>
+      </Oval4Group>
       <Overview1>Overview</Overview1>
-      <Wallet1>Wallet</Wallet1>
+      <Wallet2>Wallet</Wallet2>
       <Transactions2>Transactions</Transactions2>
       <Statistics1>Statistics</Statistics1>
-      <Statistics1>Settings</Statistics1>
+      <Settings>Settings</Settings>
       <Referral>Referral</Referral>
       <Logout>Logout</Logout>
-      <Wallet1>Trade</Wallet1>
+      <Trade1>Trade</Trade1>
       <SideNavItem alt="" src="/group-260.svg" />
       <SideNavInner alt="" src="/group-15.svg" />
       <GroupIcon alt="" src="/group-14.svg" />

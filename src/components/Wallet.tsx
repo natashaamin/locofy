@@ -2,496 +2,553 @@ import { FunctionComponent, memo } from "react";
 import styled from "styled-components";
 import Nav1 from "./Nav1";
 
-export type WalletType = {
+export type Wallet1Type = {
   className?: string;
 };
 
 const Base = styled.div`
-  align-self: stretch;
-  width: 1500px;
-  position: relative;
+  position: absolute;
+  top: 83px;
+  left: 0px;
   background-color: var(--color-midnightblue);
-  display: none;
-  max-width: 100%;
+  width: 1500px;
+  height: 653px;
 `;
 const Rectangle = styled.div`
-  width: 294px;
-  height: 657px;
-  position: relative;
-  background-color: var(--color-midnightblue);
-  border: 2px solid var(--color-whitesmoke-300);
-  box-sizing: border-box;
-  display: none;
-`;
-const SideNavChild = styled.img`
-  height: 54px;
-  width: 273px;
-  position: relative;
-  display: none;
-`;
-const Oval4Icon = styled.img`
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
+  background-color: var(--color-midnightblue);
+  border: 2px solid var(--color-whitesmoke-300);
+  box-sizing: border-box;
+  width: 294px;
+  height: 740px;
 `;
-const NotificationCount = styled.b`
+const SideNavChild = styled.img`
   position: absolute;
-  top: 4px;
-  left: 3px;
+  top: 258px;
+  left: 0px;
+  width: 273px;
+  height: 54px;
+`;
+const Oval4Icon = styled.img`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+`;
+const B = styled.b`
+  position: absolute;
+  width: 66.67%;
+  top: calc(50% - 6px);
+  left: 14.29%;
   letter-spacing: -0.43px;
   display: inline-block;
-  width: 14px;
-  min-width: 14px;
-  z-index: 2;
 `;
-const Div = styled.div`
-  position: relative;
-  display: none;
+const Oval4Parent = styled.div`
+  position: absolute;
+  height: 2.72%;
+  width: 7.24%;
+  top: 28.26%;
+  right: 13.1%;
+  bottom: 69.02%;
+  left: 79.66%;
+  text-align: center;
+  font-size: var(--font-size-8);
+  color: var(--color-white);
+`;
+const Oval4Group = styled.div`
+  position: absolute;
+  height: 2.72%;
+  width: 7.24%;
+  top: 46.2%;
+  right: 13.1%;
+  bottom: 51.09%;
+  left: 79.66%;
   text-align: center;
   font-size: var(--font-size-8);
   color: var(--color-white);
 `;
 const Overview1 = styled.div`
-  flex: 1;
-  position: relative;
-  z-index: 1;
-`;
-const Wallet1 = styled.div`
+  position: absolute;
+  top: 140px;
+  left: 91.5px;
+  display: inline-block;
   width: 99px;
-  position: relative;
+  height: 27px;
+`;
+const Wallet2 = styled.div`
+  position: absolute;
+  top: 274px;
+  left: 92px;
   color: var(--color-white);
   display: inline-block;
-  z-index: 2;
+  width: 99px;
+  height: 27px;
 `;
 const Transactions2 = styled.div`
-  align-self: stretch;
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  top: 341px;
+  left: 92px;
+  display: inline-block;
+  width: 139px;
+  height: 27px;
+`;
+const Statistics1 = styled.div`
+  position: absolute;
+  top: 408px;
+  left: 92.5px;
+  display: inline-block;
+  width: 139px;
+  height: 27px;
+`;
+const Settings = styled.div`
+  position: absolute;
+  top: 475px;
+  left: 92.5px;
+  display: inline-block;
+  width: 139px;
+  height: 27px;
 `;
 const Referral = styled.div`
-  width: 74px;
-  position: relative;
+  position: absolute;
+  top: 599px;
+  left: 139px;
   font-size: var(--font-size-14);
   display: inline-block;
-  z-index: 1;
+  width: 74px;
+  height: 27px;
 `;
 const Logout = styled.div`
-  align-self: stretch;
-  position: relative;
+  position: absolute;
+  top: 647.6px;
+  left: 139px;
   font-size: var(--font-size-14);
-  z-index: 1;
+  display: inline-block;
+  width: 139px;
+  height: 27px;
 `;
 const Trade1 = styled.div`
-  flex: 1;
-  position: relative;
-  flex-shrink: 0;
-  z-index: 1;
+  position: absolute;
+  top: 207px;
+  left: 91.5px;
+  display: inline-block;
+  width: 99px;
+  height: 27px;
 `;
 const SideNavItem = styled.img`
-  width: 15px;
-  height: 10px;
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  height: 1.36%;
+  width: 5.17%;
+  top: 19.84%;
+  right: 75.86%;
+  bottom: 78.8%;
+  left: 18.97%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
 `;
 const SideNavInner = styled.img`
+  position: absolute;
+  top: 212px;
+  left: 57px;
   width: 14.6px;
   height: 13.1px;
-  position: relative;
-  flex-shrink: 0;
-  z-index: 1;
 `;
 const GroupIcon = styled.img`
+  position: absolute;
+  top: 280px;
+  left: 57px;
   width: 15.3px;
   height: 11px;
-  position: relative;
-  z-index: 2;
 `;
 const GroupIcon1 = styled.img`
-  width: 16px;
-  height: 15.8px;
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  height: 2.15%;
+  width: 5.52%;
+  top: 46.48%;
+  right: 75.17%;
+  bottom: 51.37%;
+  left: 19.31%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
 `;
 const SideNavChild1 = styled.img`
-  height: 17.3px;
+  position: absolute;
+  top: 409px;
+  left: 59px;
   width: 10.3px;
-  position: relative;
-  z-index: 1;
+  height: 17.3px;
 `;
 const SideNavChild2 = styled.img`
+  position: absolute;
+  top: 479px;
+  left: 56px;
   width: 16px;
   height: 13.8px;
-  position: relative;
-  z-index: 1;
 `;
-const SideNav3 = styled.section`
-  width: 294px;
-  background-color: var(--color-midnightblue);
-  border: 2px solid var(--color-whitesmoke-300);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-start;
-  padding: 124px var(--padding-8) 67.4px 0px;
-  gap: 106px;
-  z-index: 1;
-  text-align: left;
-  font-size: var(--font-size-12);
-  color: var(--color-ghostwhite);
-  font-family: var(--font-poppins);
-  @media screen and (max-width: 800px) {
-    padding-top: 143px;
-    padding-bottom: 44px;
-    box-sizing: border-box;
-  }
-  @media screen and (max-width: 450px) {
-    gap: 53px;
-  }
+const SideNav3 = styled.div`
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 290px;
+  height: 736px;
 `;
 const CampaignsManagement = styled.b`
-  position: relative;
+  position: absolute;
+  top: calc(50% - 236px);
+  left: 25%;
   white-space: pre-wrap;
-  flex-shrink: 0;
-  z-index: 1;
 `;
-const Wallet2 = styled.b`
-  position: relative;
+const Wallet3 = styled.b`
+  position: absolute;
+  top: 183px;
+  left: 375px;
   font-size: var(--font-size-16);
   display: inline-block;
-  min-width: 56px;
-  z-index: 1;
+  width: 56px;
+  height: 23px;
 `;
 const TriangleIcon = styled.img`
-  width: 9px;
-  height: 5px;
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  height: 27.78%;
+  width: 4.46%;
+  top: 44.44%;
+  right: 0%;
+  bottom: 27.78%;
+  left: 95.54%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
 `;
 const Accounts = styled.b`
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  top: calc(50% - 9px);
+  left: 0%;
 `;
 const NikeS = styled.b`
-  position: relative;
+  position: absolute;
+  top: calc(50% - 9px);
+  left: 43.11%;
   text-align: left;
-  z-index: 1;
 `;
-const Child = styled.img`
-  width: 3px;
-  height: 13px;
-  position: relative;
-  z-index: 1;
+const GroupChild = styled.img`
+  position: absolute;
+  height: 72.22%;
+  width: 1.49%;
+  top: 11.11%;
+  right: 63.33%;
+  bottom: 16.67%;
+  left: 35.18%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  mix-blend-mode: normal;
 `;
-const Div1 = styled.div`
-  position: relative;
-  display: none;
+const TriangleParent = styled.div`
+  position: absolute;
+  height: 2.45%;
+  width: 13.45%;
+  top: 17.39%;
+  right: 6.81%;
+  bottom: 80.16%;
+  left: 79.73%;
   text-align: center;
 `;
 const WalletChild = styled.div`
-  height: 326px;
-  width: 1025px;
-  position: relative;
+  position: absolute;
+  top: 0px;
+  left: 0px;
   border-radius: var(--br-10);
   background-color: var(--color-midnightblue);
   border: 1px solid var(--color-whitesmoke-300);
   box-sizing: border-box;
-  display: none;
-  max-width: 100%;
-  z-index: 0;
+  width: 1025px;
+  height: 326px;
 `;
 const MaskGroupIcon = styled.img`
-  height: 100%;
-  width: 100%;
   position: absolute;
-  margin: 0 !important;
   top: 0px;
-  right: 0px;
-  bottom: 0px;
   left: 0px;
+  width: 1023px;
+  height: 324px;
+`;
+const VectorIcon = styled.img`
+  position: absolute;
+  height: 5.62%;
+  width: 1.78%;
+  top: 30.56%;
+  right: 53.16%;
+  bottom: 63.83%;
+  left: 45.06%;
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
-  z-index: 1;
-`;
-const VectorIcon = styled.img`
-  width: 18.2px;
-  height: 18.2px;
-  position: relative;
-  flex-shrink: 0;
-  z-index: 2;
 `;
 const VectorIcon1 = styled.img`
-  height: 19.1px;
-  width: 19.1px;
   position: absolute;
-  margin: 0 !important;
-  top: 14px;
-  right: 724.9px;
+  height: 5.9%;
+  width: 1.87%;
+  top: 14.2%;
+  right: 37.43%;
+  bottom: 79.91%;
+  left: 60.7%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
   object-fit: contain;
-  z-index: 2;
 `;
-const RefreshIcon = styled.img`
-  height: 13.7px;
-  width: 13.7px;
-  position: relative;
-  z-index: 2;
+const VectorIcon2 = styled.img`
+  position: absolute;
+  height: 4.23%;
+  width: 1.34%;
+  top: 87.35%;
+  right: 5.99%;
+  bottom: 8.43%;
+  left: 92.67%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
 `;
-const Wallet3 = styled.b`
-  position: relative;
+const Wallet4 = styled.b`
+  position: absolute;
+  top: 41px;
+  left: 52px;
   font-size: var(--font-size-16);
-  z-index: 2;
+  display: inline-block;
+  width: 55px;
+  height: 23px;
 `;
 const Trophy1Icon = styled.img`
   position: absolute;
-  height: calc(100% - 146px);
-  top: 0px;
-  bottom: 146px;
-  left: 0px;
-  max-height: 100%;
+  top: 93px;
+  left: 99px;
   width: 178px;
+  height: 178px;
   overflow: hidden;
-  z-index: 2;
 `;
-const FrameChild = styled.div`
-  height: 42px;
-  width: 134px;
-  position: relative;
+const GroupItem = styled.div`
+  position: absolute;
+  top: 0px;
+  left: 0px;
   border-radius: var(--br-100);
   background-color: var(--color-white);
-  display: none;
+  width: 134px;
+  height: 42px;
 `;
 const WithdrawFunds = styled.div`
-  position: relative;
-  font-size: var(--font-size-10);
-  font-family: var(--font-poppins);
+  position: absolute;
+  top: 13px;
+  left: 26px;
   background: linear-gradient(178.18deg, var(--color-palevioletred), #281ac8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-align: left;
-  z-index: 1;
+  display: inline-block;
+  width: 81px;
+  height: 17px;
 `;
-const RectangleParent = styled.button`
-  cursor: pointer;
-  border: none;
-  padding: 13px var(--padding-26) var(--padding-12);
-  background-color: var(--color-white);
-  border-radius: var(--br-100);
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  z-index: 2;
-  &:hover {
-    background-color: var(--color-gainsboro-100);
-  }
+const RectangleParent = styled.div`
+  position: absolute;
+  top: 32px;
+  left: 857px;
+  width: 134px;
+  height: 42px;
+  font-size: var(--font-size-10);
 `;
 const WalletItem = styled.img`
-  height: 29.5px;
-  width: 29.7px;
   position: absolute;
-  margin: 0 !important;
-  top: 9.5px;
-  left: 6.9px;
+  height: 9.1%;
+  width: 2.9%;
+  top: 31.64%;
+  right: 91.34%;
+  bottom: 59.26%;
+  left: 5.76%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
   object-fit: contain;
-  z-index: 2;
 `;
-const SumValue = styled.h1`
-  margin: 0;
-  position: relative;
+const B1 = styled.b`
+  position: absolute;
+  top: 148px;
+  left: 369px;
   font-size: var(--font-size-36);
-  line-height: 34px;
-  font-weight: 700;
-  font-family: inherit;
-  z-index: 2;
-  @media screen and (max-width: 800px) {
-    font-size: 29px;
-    line-height: 27px;
-  }
-  @media screen and (max-width: 450px) {
-    font-size: var(--font-size-22);
-    line-height: 20px;
-  }
+  display: inline-block;
+  width: 220px;
+  height: 34px;
 `;
 const WalletInner = styled.img`
-  height: 27px;
-  width: 115px;
-  position: relative;
+  position: absolute;
+  top: 121px;
+  left: 342px;
   border-radius: 215px;
-  display: none;
-  z-index: 10;
+  width: 115px;
+  height: 27px;
 `;
 const TotalEarnings = styled.div`
-  position: relative;
+  position: absolute;
+  top: 126px;
+  left: 357px;
   display: inline-block;
-  min-width: 86px;
-  z-index: 3;
+  width: 86px;
+  height: 15px;
 `;
-const Available = styled.h2`
-  margin: 0;
-  position: relative;
+const B2 = styled.b`
+  position: absolute;
+  top: 148px;
+  left: 689px;
   font-size: var(--font-size-36);
-  line-height: 45px;
-  font-weight: 700;
-  font-family: inherit;
-  z-index: 2;
-  @media screen and (max-width: 800px) {
-    font-size: 29px;
-    line-height: 36px;
-  }
-  @media screen and (max-width: 450px) {
-    font-size: var(--font-size-22);
-    line-height: 27px;
-  }
+  display: inline-block;
+  width: 206px;
+  height: 45px;
 `;
 const RectangleIcon = styled.img`
-  height: 27px;
-  width: 76px;
-  position: relative;
+  position: absolute;
+  top: 121px;
+  left: 662px;
   border-radius: 215px;
-  display: none;
-  z-index: 13;
+  width: 76px;
+  height: 27px;
 `;
 const Balance = styled.div`
-  position: relative;
+  position: absolute;
+  top: 126px;
+  left: 676px;
   display: inline-block;
-  min-width: 51px;
-  z-index: 4;
+  width: 51px;
+  height: 15px;
 `;
 const WalletChild1 = styled.img`
   position: absolute;
-  top: 166px;
-  left: 157px;
+  top: 259px;
+  left: 256px;
   width: 27px;
   height: 10px;
-  z-index: 3;
 `;
 const PleaseNoteThiss = styled.span``;
 const PleaseNoteThissContainer = styled.div`
-  position: relative;
+  position: absolute;
+  top: 200px;
+  left: 369px;
   line-height: 163.42%;
-  z-index: 2;
+  display: inline-block;
+  width: 255px;
+  height: 37px;
 `;
-const Wallet4 = styled.div`
-  align-self: stretch;
-  border-radius: var(--br-10);
-  background-color: var(--color-midnightblue);
-  border: 1px solid var(--color-whitesmoke-300);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: var(--padding-32) var(--padding-32) 27.3px 52px;
-  position: relative;
-  gap: 38px;
-  max-width: 100%;
-  z-index: 1;
+const PleaseNoteThis = styled.div`
+  position: absolute;
+  top: 200px;
+  left: 689px;
+  line-height: 163.42%;
+  display: inline-block;
+  width: 227px;
+  height: 36px;
+`;
+const Wallet5 = styled.div`
+  position: absolute;
+  top: 244px;
+  left: 375px;
+  width: 1023px;
+  height: 324px;
   color: var(--color-white);
-  @media screen and (max-width: 1125px) {
-    flex-wrap: wrap;
-    padding-left: var(--padding-26);
-    box-sizing: border-box;
-  }
-  @media screen and (max-width: 800px) {
-    gap: var(--gap-19);
-  }
 `;
-const Div2 = styled.div`
-  position: relative;
-  display: none;
+const Wallet6 = styled.div`
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1500px;
+  height: 736px;
 `;
 const WalletRoot = styled.div`
   width: 1500px;
   background-color: var(--color-white);
   max-width: 100%;
+  height: 736px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: left;
   font-size: var(--font-size-12);
   color: var(--color-ghostwhite);
   font-family: var(--font-poppins);
 `;
 
-const Wallet: FunctionComponent<WalletType> = memo(({ className = "" }) => {
+const Wallet1: FunctionComponent<Wallet1Type> = memo(({ className = "" }) => {
   return (
     <WalletRoot className={className}>
-      <Div2>
+      <Wallet6>
         <Base />
         <SideNav3>
           <Rectangle />
           <SideNavChild alt="" src="/rectangle-274.svg" />
-          <Div>
-            <Oval4Icon loading="lazy" alt="" src="/oval-4-1.svg" />
-            <NotificationCount>19</NotificationCount>
-          </Div>
-          <Div>
-            <Oval4Icon loading="lazy" alt="" src="/oval-4-1.svg" />
-            <NotificationCount>10</NotificationCount>
-          </Div>
+          <Oval4Parent>
+            <Oval4Icon alt="" src="/oval-4-1.svg" />
+            <B>19</B>
+          </Oval4Parent>
+          <Oval4Group>
+            <Oval4Icon alt="" src="/oval-4-1.svg" />
+            <B>10</B>
+          </Oval4Group>
           <Overview1>Overview</Overview1>
-          <Wallet1>Wallet</Wallet1>
+          <Wallet2>Wallet</Wallet2>
           <Transactions2>Transactions</Transactions2>
-          <Transactions2>Statistics</Transactions2>
-          <Transactions2>Settings</Transactions2>
+          <Statistics1>Statistics</Statistics1>
+          <Settings>Settings</Settings>
           <Referral>Referral</Referral>
           <Logout>Logout</Logout>
           <Trade1>Trade</Trade1>
-          <SideNavItem loading="lazy" alt="" src="/group-2601.svg" />
-          <SideNavInner loading="lazy" alt="" src="/group-151.svg" />
-          <GroupIcon loading="lazy" alt="" src="/group-14.svg" />
-          <GroupIcon1 loading="lazy" alt="" src="/group1.svg" />
-          <SideNavChild1 loading="lazy" alt="" src="/group-101.svg" />
-          <SideNavChild2 loading="lazy" alt="" src="/group-1111.svg" />
+          <SideNavItem alt="" src="/group-2601.svg" />
+          <SideNavInner alt="" src="/group-151.svg" />
+          <GroupIcon alt="" src="/group-14.svg" />
+          <GroupIcon1 alt="" src="/group1.svg" />
+          <SideNavChild1 alt="" src="/group-101.svg" />
+          <SideNavChild2 alt="" src="/group-1111.svg" />
         </SideNav3>
         <CampaignsManagement>User Management Wallet</CampaignsManagement>
-        <Wallet2>Wallet</Wallet2>
-        <Div1>
-          <TriangleIcon loading="lazy" alt="" src="/triangle1.svg" />
+        <Wallet3>Wallet</Wallet3>
+        <TriangleParent>
+          <TriangleIcon alt="" src="/triangle1.svg" />
           <Accounts>Accounts</Accounts>
           <NikeS>RAMON RIDWAN</NikeS>
-          <Child loading="lazy" alt="" src="/line-221.svg" />
-        </Div1>
-        <Wallet4>
+          <GroupChild alt="" src="/line-221.svg" />
+        </TriangleParent>
+        <Wallet5>
           <WalletChild />
-          <MaskGroupIcon alt="" src="/mask-group-12.svg" />
-          <VectorIcon loading="lazy" alt="" src="/vector-1.svg" />
-          <VectorIcon1 loading="lazy" alt="" src="/vector.svg" />
-          <RefreshIcon loading="lazy" alt="" src="/vector-2.svg" />
-          <Wallet3>Wallet</Wallet3>
+          <MaskGroupIcon alt="" src="/mask-group.svg" />
+          <VectorIcon alt="" src="/vector-1.svg" />
+          <VectorIcon1 alt="" src="/vector.svg" />
+          <VectorIcon2 alt="" src="/vector-2.svg" />
+          <Wallet4>Wallet</Wallet4>
           <Trophy1Icon alt="" src="/trophy-1.svg" />
           <RectangleParent>
-            <FrameChild />
+            <GroupItem />
             <WithdrawFunds>Withdraw Funds</WithdrawFunds>
           </RectangleParent>
-          <WalletItem loading="lazy" alt="" src="/group-303@2x.png" />
-          <SumValue>#120000.00</SumValue>
+          <WalletItem alt="" src="/group-303@2x.png" />
+          <B1>#120000.00</B1>
           <WalletInner alt="" src="/rectangle-287.svg" />
           <TotalEarnings>Total Earnings</TotalEarnings>
-          <Available>#30000.00</Available>
+          <B2>#30000.00</B2>
           <RectangleIcon alt="" src="/rectangle-299.svg" />
           <Balance>Balance</Balance>
-          <WalletChild1 loading="lazy" alt="" src="/vector-11.svg" />
+          <WalletChild1 alt="" src="/vector-11.svg" />
           <PleaseNoteThissContainer>
             <PleaseNoteThiss>{`Please note this’s the total sum of ya’ transaction here on `}</PleaseNoteThiss>
             <PleaseNoteThiss>GOGE AFRICA</PleaseNoteThiss>
           </PleaseNoteThissContainer>
-          <PleaseNoteThissContainer>
+          <PleaseNoteThis>
             Please note this the current balance amount left on ya’ wallet.
-          </PleaseNoteThissContainer>
-        </Wallet4>
-      </Div2>
+          </PleaseNoteThis>
+        </Wallet5>
+      </Wallet6>
       <Nav1 group364="/group-364.svg" />
     </WalletRoot>
   );
 });
 
-export default Wallet;
+export default Wallet1;

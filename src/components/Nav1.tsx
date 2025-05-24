@@ -12,127 +12,121 @@ export type Nav1Type = {
 };
 
 const Rectangle2 = styled.div`
-  height: 87px;
-  width: 1504px;
-  position: relative;
+  position: absolute;
+  top: 81px;
+  left: -2px;
   background-color: var(--color-midnightblue);
   border: 2px solid var(--color-whitesmoke-100);
   box-sizing: border-box;
-  display: none;
-  max-width: 100%;
-  z-index: 0;
+  width: 1504px;
+  height: 87px;
 `;
 const NavChild = styled.div`
-  height: 40px;
-  width: 422px;
-  position: relative;
+  position: absolute;
+  top: 21px;
+  left: 722px;
   border-radius: var(--br-100);
   border: 1px solid var(--color-white);
   box-sizing: border-box;
-  display: none;
-  max-width: 100%;
-  z-index: 1;
+  width: 422px;
+  height: 40px;
 `;
 const MaskGroupIcon = styled.img`
-  height: 36px;
+  position: absolute;
+  top: 23px;
+  left: 1196px;
   width: 36px;
-  position: relative;
-  z-index: 1;
+  height: 36px;
 `;
 const RamonRidwan = styled.div`
-  position: relative;
+  position: absolute;
+  top: 35px;
+  left: 1243px;
   line-height: 24px;
-  z-index: 1;
 `;
 const NavItem = styled.img`
-  height: 20px;
-  width: 12.3px;
   position: absolute;
-  margin: 0 !important;
-  bottom: 61.8px;
-  left: -10.3px;
-  z-index: 1;
+  top: 33.2px;
+  left: 1377px;
+  width: 12.3px;
+  height: 20px;
 `;
 const Oval2Icon = styled.img`
-  height: 14px;
-  width: 14.6px;
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
 `;
 const B = styled.b`
-  position: relative;
+  position: absolute;
+  width: 47.95%;
+  top: calc(50% - 4px);
+  left: 27.4%;
   letter-spacing: -0.43px;
-  z-index: 3;
+  display: inline-block;
 `;
-const Div = styled.div`
-  position: relative;
-  display: none;
-  z-index: 5;
+const Oval2Parent = styled.div`
+  position: absolute;
+  height: 16.87%;
+  width: 0.97%;
+  top: 34.94%;
+  right: 6.81%;
+  bottom: 48.19%;
+  left: 92.22%;
   text-align: center;
   font-size: var(--font-size-6);
 `;
-const SearchEgLive = styled.input`
-  width: 97px;
-  border: none;
-  outline: none;
-  font-family: var(--font-poppins);
+const SearchEgLive = styled.div`
+  position: absolute;
+  width: 6.47%;
+  top: calc(50% - 6.5px);
+  left: 52.47%;
   font-size: var(--font-size-10);
-  background-color: transparent;
-  position: relative;
   line-height: 24px;
-  color: var(--color-gray-300);
-  text-align: left;
   display: inline-block;
-  padding: 0;
-  z-index: 2;
+  height: 16px;
+  opacity: 0.5;
+  mix-blend-mode: normal;
 `;
 const SearchIcon = styled.img`
-  height: 13px;
-  width: 13.5px;
-  position: relative;
-  z-index: 2;
-`;
-const NavInner = styled.img`
-  align-self: stretch;
-  height: 21px;
-  position: relative;
+  position: absolute;
+  height: 15.66%;
+  width: 0.9%;
+  top: 42.17%;
+  right: 48.7%;
+  bottom: 42.17%;
+  left: 50.4%;
   max-width: 100%;
   overflow: hidden;
-  flex-shrink: 0;
-  z-index: 1;
+  max-height: 100%;
+`;
+const NavInner = styled.img`
+  position: absolute;
+  top: 35px;
+  left: 65px;
+  width: 104px;
+  height: 21px;
 `;
 const NavRoot = styled.div<{
   navFlex?: CSSProperties["flex"];
   navTop?: CSSProperties["top"];
   navPosition?: CSSProperties["position"];
 }>`
-  align-self: stretch;
-  flex: 1;
-  background-color: var(--color-midnightblue);
-  border: 2px solid var(--color-whitesmoke-100);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: space-between;
-  padding: 21px 106px var(--padding-22) 65px;
-  position: relative;
-  gap: var(--gap-20);
-  max-width: 100%;
-  z-index: 3;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1500px;
+  height: 83px;
   text-align: left;
   font-size: var(--font-size-12);
   color: var(--color-white);
   font-family: var(--font-poppins);
-  @media screen and (max-width: 800px) {
-    padding-left: var(--padding-32);
-    padding-right: 53px;
-    box-sizing: border-box;
-  }
-  @media screen and (max-width: 450px) {
-    padding-right: var(--padding-20);
-    box-sizing: border-box;
-  }
   flex: ${(p) => p.navFlex};
   top: ${(p) => p.navTop};
   position: ${(p) => p.navPosition};
@@ -149,16 +143,16 @@ const Nav1: FunctionComponent<Nav1Type> = memo(
       >
         <Rectangle2 />
         <NavChild />
-        <MaskGroupIcon loading="lazy" alt="" src="/mask-group-1.svg" />
+        <MaskGroupIcon alt="" src="/mask-group-1.svg" />
         <RamonRidwan>Ramon Ridwan</RamonRidwan>
         <NavItem alt="" src="/group-254.svg" />
-        <Div>
-          <Oval2Icon loading="lazy" alt="" src="/oval-2.svg" />
+        <Oval2Parent>
+          <Oval2Icon alt="" src="/oval-2.svg" />
           <B>24</B>
-        </Div>
-        <SearchEgLive placeholder="Search e.g card" type="text" />
+        </Oval2Parent>
+        <SearchEgLive>Search e.g card</SearchEgLive>
         <SearchIcon alt="" src="/searchicon.svg" />
-        <NavInner loading="lazy" alt="" src={group364} />
+        <NavInner alt="" src={group364} />
       </NavRoot>
     );
   }

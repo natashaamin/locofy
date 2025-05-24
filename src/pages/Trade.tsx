@@ -4,195 +4,295 @@ import SideNav from "../components/SideNav";
 import Nav from "../components/Nav";
 
 const Base = styled.div`
-  align-self: stretch;
-  width: 1500px;
-  position: relative;
+  position: absolute;
+  top: 83px;
+  left: 0px;
   background-color: var(--color-midnightblue);
-  display: none;
-  max-width: 100%;
+  width: 1500px;
+  height: 937px;
 `;
 const ChatTradeChild = styled.div`
-  align-self: stretch;
-  width: 1027px;
-  position: relative;
+  position: absolute;
+  top: 0px;
+  left: 0px;
   border-radius: var(--br-10);
   background-color: var(--color-midnightblue);
   border: 2px solid var(--color-whitesmoke-300);
   box-sizing: border-box;
-  display: none;
-  max-width: 100%;
-  z-index: 0;
+  width: 1027px;
+  height: 690px;
 `;
 const ChatTradeItem = styled.img`
-  align-self: stretch;
-  height: 686px;
-  position: relative;
-  max-width: 100%;
-  overflow: hidden;
-  flex-shrink: 0;
-  display: none;
-  z-index: 1;
-`;
-const MaskGroupIcon = styled.img`
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
+  width: 262px;
+  height: 686px;
+`;
+const MaskGroupIcon = styled.img`
+  position: absolute;
+  top: 24px;
+  left: 35px;
+  width: 36px;
+  height: 36px;
 `;
 const RamonRidwan = styled.b`
-  position: relative;
+  position: absolute;
+  top: 24px;
+  left: 84px;
   line-height: 24px;
-  flex-shrink: 0;
-  z-index: 2;
+`;
+const MaskGroupIcon1 = styled.img`
+  position: absolute;
+  top: 112px;
+  left: 35px;
+  width: 36px;
+  height: 36px;
 `;
 const AgentRue = styled.b`
-  position: relative;
+  position: absolute;
+  top: 112px;
+  left: 84px;
   line-height: 24px;
-  z-index: 2;
 `;
 const Online = styled.div`
-  margin-top: -8px;
-  position: relative;
+  position: absolute;
+  top: 40px;
+  left: 84px;
   font-size: var(--font-size-10);
   line-height: 24px;
-  flex-shrink: 0;
-  z-index: 2;
+`;
+const Online1 = styled.div`
+  position: absolute;
+  top: 129px;
+  left: 84px;
+  font-size: var(--font-size-10);
+  line-height: 24px;
 `;
 const Typing = styled.div`
-  position: relative;
+  position: absolute;
+  top: 129px;
+  left: 193px;
   font-size: var(--font-size-10);
   line-height: 24px;
-  z-index: 2;
 `;
 const ChatTradeInner = styled.div`
   position: absolute;
-  top: 23px;
-  left: 26px;
+  top: 47px;
+  left: 61px;
   border-radius: 50%;
   background-color: var(--color-limegreen);
   width: 10px;
   height: 10px;
-  z-index: 3;
 `;
 const EllipseDiv = styled.div`
   position: absolute;
-  top: 24px;
-  left: 26px;
+  top: 136px;
+  left: 61px;
   border-radius: 50%;
   background-color: var(--color-limegreen);
   width: 10px;
   height: 10px;
-  z-index: 3;
+`;
+const MaskGroupIcon2 = styled.img`
+  position: absolute;
+  top: 178px;
+  left: 35px;
+  width: 36px;
+  height: 36px;
+`;
+const AgentDaniel = styled.b`
+  position: absolute;
+  top: 178px;
+  left: 84px;
+  line-height: 24px;
 `;
 const Offline = styled.div`
-  position: relative;
+  position: absolute;
+  top: 195px;
+  left: 84px;
   font-size: var(--font-size-10);
   line-height: 24px;
-  z-index: 3;
 `;
 const ChatTradeChild1 = styled.div`
   position: absolute;
-  top: 24px;
-  left: 26px;
+  top: 202px;
+  left: 61px;
   border-radius: 50%;
-  background-color: var(--color-gainsboro-200);
+  background-color: var(--color-gainsboro);
   width: 10px;
   height: 10px;
-  z-index: 3;
+`;
+const MaskGroupIcon3 = styled.img`
+  position: absolute;
+  top: 244px;
+  left: 35px;
+  width: 36px;
+  height: 36px;
+`;
+const AgentRose = styled.b`
+  position: absolute;
+  top: 244px;
+  left: 84px;
+  line-height: 24px;
+`;
+const Offline1 = styled.div`
+  position: absolute;
+  top: 261px;
+  left: 84px;
+  font-size: var(--font-size-10);
+  line-height: 24px;
+`;
+const ChatTradeChild2 = styled.div`
+  position: absolute;
+  top: 268px;
+  left: 61px;
+  border-radius: 50%;
+  background-color: var(--color-gainsboro);
+  width: 10px;
+  height: 10px;
+`;
+const MaskGroupIcon4 = styled.img`
+  position: absolute;
+  top: 308px;
+  left: 35px;
+  width: 36px;
+  height: 36px;
+`;
+const AgentWilliam = styled.b`
+  position: absolute;
+  top: 308px;
+  left: 84px;
+  line-height: 24px;
+`;
+const Online2 = styled.div`
+  position: absolute;
+  top: 325px;
+  left: 84px;
+  font-size: var(--font-size-10);
+  line-height: 24px;
+`;
+const ChatTradeChild3 = styled.div`
+  position: absolute;
+  top: 332px;
+  left: 61px;
+  border-radius: 50%;
+  background-color: var(--color-gainsboro);
+  width: 10px;
+  height: 10px;
 `;
 const LineDiv = styled.div`
-  align-self: stretch;
-  height: 2px;
-  position: relative;
+  position: absolute;
+  top: 80px;
+  left: 0px;
   border-top: 2px solid var(--color-whitesmoke-300);
   box-sizing: border-box;
-  z-index: 2;
+  width: 264px;
+  height: 2px;
 `;
-const AgentJohnCount = styled.b`
+const Oval4Icon = styled.img`
   position: absolute;
-  top: 4px;
-  left: 3px;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+`;
+const B = styled.b`
+  position: absolute;
+  width: 66.67%;
+  top: calc(50% - 6px);
+  left: 14.29%;
   letter-spacing: -0.43px;
   display: inline-block;
-  width: 14px;
-  min-width: 14px;
-  z-index: 3;
 `;
-const Div = styled.div`
-  position: relative;
-  display: none;
-  z-index: 24;
+const Oval4Parent = styled.div`
+  position: absolute;
+  height: 2.92%;
+  width: 2.05%;
+  top: 27.55%;
+  right: 77.22%;
+  bottom: 69.53%;
+  left: 20.72%;
   text-align: center;
   font-size: var(--font-size-8);
 `;
-const Div1 = styled.div`
-  position: relative;
-  display: none;
-  z-index: 25;
+const Oval4Group = styled.div`
+  position: absolute;
+  height: 2.92%;
+  width: 2.05%;
+  top: 36.73%;
+  right: 77.22%;
+  bottom: 60.35%;
+  left: 20.72%;
   text-align: center;
   font-size: var(--font-size-8);
 `;
 const InputBox = styled.div`
-  height: 50px;
-  width: 688px;
-  position: relative;
+  position: absolute;
+  height: 7.29%;
+  width: 67.25%;
+  top: 89.5%;
+  right: 3.42%;
+  bottom: 3.21%;
+  left: 29.33%;
   border-radius: var(--br-100);
   background-color: var(--color-midnightblue);
   border: 1px solid var(--color-whitesmoke-300);
   box-sizing: border-box;
-  display: none;
-  max-width: 100%;
-  z-index: 26;
 `;
 const Path753Icon = styled.img`
-  height: 23.2px;
-  width: 23.2px;
   position: absolute;
-  margin: 0 !important;
-  top: 11.5px;
-  right: 444.3px;
+  top: 625.5px;
+  left: 855.5px;
+  width: 23.2px;
+  height: 23.2px;
   object-fit: contain;
-  z-index: 2;
 `;
 const Placeholder = styled.div`
-  width: 145.9px;
-  position: relative;
+  position: absolute;
+  width: 14.26%;
+  top: calc(50% + 287px);
+  left: 32.26%;
   letter-spacing: 0.44px;
   line-height: 22px;
   color: var(--color-silver);
   display: inline-block;
-  flex-shrink: 0;
-  z-index: 2;
 `;
 const Btn = styled.div`
-  height: 30px;
-  width: 73px;
-  position: relative;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
   border-radius: var(--br-100);
   background: linear-gradient(178.18deg, var(--color-palevioletred), #281ac8);
-  display: none;
 `;
 const Btn1 = styled.b`
-  flex: 1;
-  position: relative;
+  position: absolute;
+  width: calc(100% - 32px);
+  top: 6px;
+  left: 16px;
   letter-spacing: 0.38px;
   line-height: 22px;
   text-transform: uppercase;
   display: inline-block;
-  min-width: 41px;
-  z-index: 1;
+  height: 16px;
 `;
 const Uibuttonssqnormal = styled.div`
-  border-radius: var(--br-100);
-  background: linear-gradient(178.18deg, var(--color-palevioletred), #281ac8);
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 6px 16px 2px;
-  z-index: 2;
+  position: absolute;
+  height: 4.37%;
+  width: 7.14%;
+  top: 90.79%;
+  right: 4.69%;
+  bottom: 4.84%;
+  left: 88.17%;
   text-align: center;
 `;
 const Line = styled.div`
@@ -204,18 +304,21 @@ const Line = styled.div`
   bottom: 0%;
   left: 0%;
   background: linear-gradient(178.18deg, var(--color-palevioletred), #281ac8);
-  display: none;
 `;
 const Uilinegray = styled.div`
-  align-self: stretch;
-  height: 2px;
-  position: relative;
-  background: linear-gradient(178.18deg, var(--color-palevioletred), #281ac8);
-  flex-shrink: 0;
-  z-index: 1;
+  position: absolute;
+  height: 0.29%;
+  width: 61%;
+  top: 53.94%;
+  right: 5%;
+  bottom: 45.77%;
+  left: 34%;
 `;
 const Unread = styled.b`
-  position: relative;
+  position: absolute;
+  width: 5.59%;
+  top: calc(50% + 20px);
+  left: 27.96%;
   letter-spacing: 0.38px;
   line-height: 16px;
   text-transform: uppercase;
@@ -224,228 +327,269 @@ const Unread = styled.b`
   background: linear-gradient(178.18deg, var(--color-palevioletred), #281ac8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  min-width: 57.2px;
-  flex-shrink: 0;
-  z-index: 1;
 `;
-const Bg2 = styled.input`
-  border: none;
-  outline: none;
-  background-color: var(--color-whitesmoke-200);
+const Bg = styled.div`
   position: absolute;
-  top: 0px;
-  left: 0px;
+  height: 57.83%;
+  width: 91%;
+  top: 33.73%;
+  right: 9%;
+  bottom: 8.43%;
+  left: 0%;
   border-radius: var(--br-10);
-  width: 443px;
-  height: 48px;
-  z-index: 1;
+  background-color: var(--color-whitesmoke-200);
 `;
 const Text = styled.div`
   position: absolute;
-  top: 14px;
+  width: calc(100% - 12px);
+  top: 42px;
   left: 20px;
   line-height: 22px;
   display: inline-block;
-  width: 474.8px;
-  z-index: 2;
 `;
 const Name = styled.div`
-  position: relative;
+  position: absolute;
+  width: 9.45%;
+  top: calc(50% - 41.5px);
+  left: 0%;
   font-size: var(--font-size-10);
   line-height: 17px;
   color: var(--color-white);
-  z-index: 1;
+  display: inline-block;
 `;
-const Div2 = styled.div`
-  position: relative;
-  display: none;
-  z-index: 32;
-  color: var(--color-gray-100);
+const Messageleft = styled.div`
+  position: absolute;
+  height: 12.1%;
+  width: 47.59%;
+  top: 4.37%;
+  right: 23.09%;
+  bottom: 83.53%;
+  left: 29.33%;
+  color: var(--color-gray);
 `;
-const Bg3 = styled.div`
-  width: 328px;
-  position: relative;
+const Bg1 = styled.div`
+  position: absolute;
+  height: 57.83%;
+  width: 67.38%;
+  top: 33.73%;
+  right: 32.62%;
+  bottom: 8.43%;
+  left: 0%;
   border-radius: var(--br-10);
   background-color: var(--color-whitesmoke-200);
-  height: 48px;
-  display: none;
 `;
 const Text1 = styled.div`
-  width: 284px;
-  position: relative;
+  position: absolute;
+  width: calc(100% - 202.8px);
+  top: 42px;
+  left: 20px;
   line-height: 22px;
   display: inline-block;
-  z-index: 2;
 `;
 const Name1 = styled.div`
-  width: 152.8px;
-  position: relative;
+  position: absolute;
+  width: 31.39%;
+  top: calc(50% - 41.5px);
+  left: 0%;
   font-size: var(--font-size-10);
   line-height: 17px;
   color: var(--color-white);
   display: inline-block;
-  z-index: 1;
 `;
-const Div3 = styled.div`
-  position: relative;
-  display: none;
-  z-index: 33;
-  color: var(--color-gray-100);
+const Messageleft1 = styled.div`
+  position: absolute;
+  height: 12.1%;
+  width: 47.59%;
+  top: 33.38%;
+  right: 23.09%;
+  bottom: 54.52%;
+  left: 29.33%;
+  color: var(--color-gray);
 `;
-const Bg4 = styled.div`
-  width: 320px;
-  position: relative;
+const Bg2 = styled.div`
+  position: absolute;
+  height: 63.16%;
+  width: 100%;
+  top: 36.84%;
+  right: 0%;
+  bottom: 0%;
+  left: 0%;
   border-radius: var(--br-10);
   background-color: var(--color-whitesmoke-200);
-  height: 48px;
-  display: none;
 `;
-const ChatMessageInput = styled.div`
-  width: 279px;
-  position: relative;
+const Text2 = styled.div`
+  position: absolute;
+  width: calc(100% - 41px);
+  top: 42px;
+  left: 20px;
   line-height: 22px;
   display: inline-block;
-  z-index: 2;
 `;
 const Name2 = styled.div`
-  position: relative;
+  position: absolute;
+  width: 25.94%;
+  top: calc(50% - 38px);
+  left: 74.06%;
   font-size: var(--font-size-10);
   line-height: 17px;
   color: var(--color-white);
   display: inline-block;
-  min-width: 83px;
-  z-index: 1;
 `;
-const Div4 = styled.div`
-  position: relative;
-  display: none;
-  z-index: 34;
-  color: var(--color-gray-100);
-`;
-const Div5 = styled.div`
-  position: relative;
-  display: none;
-  z-index: 35;
-  color: var(--color-gray-100);
+const BgParent = styled.div`
+  position: absolute;
+  height: 11.08%;
+  width: 31.28%;
+  top: 19.39%;
+  right: 3.62%;
+  bottom: 69.53%;
+  left: 65.1%;
+  color: var(--color-gray);
 `;
 const Name3 = styled.div`
-  position: relative;
+  position: absolute;
+  width: 26.5%;
+  top: calc(50% - 41.5px);
+  left: 0%;
   font-size: var(--font-size-10);
   line-height: 17px;
-  z-index: 1;
+  color: var(--color-white);
+  display: inline-block;
 `;
-const Div6 = styled.div`
-  position: relative;
-  display: none;
-  z-index: 36;
-  color: var(--color-gray-100);
+const Messageleft2 = styled.div`
+  position: absolute;
+  height: 12.1%;
+  width: 47.59%;
+  top: 57.43%;
+  right: 23.09%;
+  bottom: 30.47%;
+  left: 29.33%;
+  color: var(--color-gray);
 `;
-const FrameChild = styled.div`
-  height: 42px;
-  width: 134px;
-  position: relative;
+const Name4 = styled.div`
+  position: absolute;
+  width: 40.94%;
+  top: calc(50% - 38px);
+  left: 59.06%;
+  font-size: var(--font-size-10);
+  line-height: 17px;
+  display: inline-block;
+`;
+const BgGroup = styled.div`
+  position: absolute;
+  height: 11.08%;
+  width: 31.28%;
+  top: 72.45%;
+  right: 3.62%;
+  bottom: 16.47%;
+  left: 65.1%;
+  color: var(--color-gray);
+`;
+const GroupChild = styled.div`
+  position: absolute;
+  top: 0px;
+  left: 0px;
   border-radius: var(--br-100);
   background: linear-gradient(178.18deg, var(--color-palevioletred), #281ac8);
-  display: none;
+  width: 134px;
+  height: 42px;
 `;
 const NewTrade = styled.div`
-  position: relative;
-  font-size: var(--font-size-10);
-  font-family: var(--font-poppins);
-  color: var(--color-white);
-  text-align: left;
+  position: absolute;
+  top: 12px;
+  left: 40px;
   display: inline-block;
-  min-width: 61px;
-  z-index: 1;
+  width: 61px;
+  height: 17px;
 `;
-const RectangleParent = styled.button`
-  cursor: pointer;
-  border: none;
-  padding: var(--padding-12) 33px 13px 40px;
-  background-color: transparent;
-  border-radius: var(--br-100);
-  background: linear-gradient(178.18deg, var(--color-palevioletred), #281ac8);
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  z-index: 2;
+const RectangleParent = styled.div`
+  position: absolute;
+  top: 620px;
+  left: 61px;
+  width: 134px;
+  height: 42px;
+  font-size: var(--font-size-10);
 `;
 const ChatTrade = styled.div`
-  align-self: stretch;
-  border-radius: var(--br-10);
-  background-color: var(--color-midnightblue);
-  border: 2px solid var(--color-whitesmoke-300);
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0px 37px 0px 0px;
-  position: relative;
-  gap: 24px;
-  max-width: 100%;
-  z-index: 1;
-  @media screen and (max-width: 1125px) {
-    flex-wrap: wrap;
-    padding: var(--padding-20);
-    box-sizing: border-box;
-  }
+  position: absolute;
+  top: 232px;
+  left: 375px;
+  width: 1023px;
+  height: 686px;
 `;
 const CampaignsManagement = styled.b`
-  position: relative;
+  position: absolute;
+  top: calc(50% - 378px);
+  left: 25%;
   white-space: pre-wrap;
-  z-index: 1;
 `;
 const Trade1 = styled.b`
-  position: relative;
+  position: absolute;
+  top: 183px;
+  left: 375px;
   font-size: var(--font-size-16);
   display: inline-block;
-  min-width: 53px;
-  z-index: 1;
+  width: 53px;
+  height: 23px;
 `;
 const TriangleIcon = styled.img`
-  width: 9px;
-  height: 5px;
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  height: 27.78%;
+  width: 4.46%;
+  top: 44.44%;
+  right: 0%;
+  bottom: 27.78%;
+  left: 95.54%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
 `;
 const Accounts = styled.b`
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  top: calc(50% - 9px);
+  left: 0%;
 `;
 const NikeS = styled.b`
-  position: relative;
+  position: absolute;
+  top: calc(50% - 9px);
+  left: 43.11%;
   text-align: left;
-  z-index: 1;
 `;
-const Child = styled.img`
-  width: 3px;
-  height: 13px;
-  position: relative;
-  z-index: 1;
+const GroupItem = styled.img`
+  position: absolute;
+  height: 72.22%;
+  width: 1.49%;
+  top: 11.11%;
+  right: 63.33%;
+  bottom: 16.67%;
+  left: 35.18%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  mix-blend-mode: normal;
 `;
-const Div7 = styled.div`
-  position: relative;
-  display: none;
+const TriangleParent = styled.div`
+  position: absolute;
+  height: 1.76%;
+  width: 13.45%;
+  top: 12.55%;
+  right: 6.81%;
+  bottom: 85.69%;
+  left: 79.73%;
   text-align: center;
 `;
-const Div8 = styled.div`
-  position: relative;
-  display: none;
+const Trade2 = styled.div`
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 1500px;
+  height: 1020px;
 `;
 const TradeRoot = styled.div`
   width: 100%;
-  height: 1020px;
   position: relative;
   background-color: var(--color-white);
+  height: 1020px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  line-height: normal;
-  letter-spacing: normal;
   text-align: left;
   font-size: var(--font-size-12);
   color: var(--color-white);
@@ -455,42 +599,42 @@ const TradeRoot = styled.div`
 const Trade: FunctionComponent = () => {
   return (
     <TradeRoot>
-      <Div8>
+      <Trade2>
         <Base />
         <SideNav />
         <ChatTrade>
           <ChatTradeChild />
           <ChatTradeItem alt="" src="/rectangle-300.svg" />
-          <MaskGroupIcon loading="lazy" alt="" src="/mask-group-1.svg" />
+          <MaskGroupIcon alt="" src="/mask-group-1.svg" />
           <RamonRidwan>Ramon Ridwan</RamonRidwan>
-          <MaskGroupIcon loading="lazy" alt="" src="/mask-group-1.svg" />
+          <MaskGroupIcon1 alt="" src="/mask-group-1.svg" />
           <AgentRue>Agent Rue</AgentRue>
           <Online>Online</Online>
-          <Typing>Online</Typing>
+          <Online1>Online</Online1>
           <Typing>typing....</Typing>
           <ChatTradeInner />
           <EllipseDiv />
-          <MaskGroupIcon loading="lazy" alt="" src="/mask-group-1.svg" />
-          <AgentRue>Agent Daniel</AgentRue>
+          <MaskGroupIcon2 alt="" src="/mask-group-1.svg" />
+          <AgentDaniel>Agent Daniel</AgentDaniel>
           <Offline>Offline</Offline>
           <ChatTradeChild1 />
-          <MaskGroupIcon loading="lazy" alt="" src="/mask-group-1.svg" />
-          <AgentRue>Agent Rose</AgentRue>
-          <Offline>Offline</Offline>
-          <ChatTradeChild1 />
-          <MaskGroupIcon loading="lazy" alt="" src="/mask-group-1.svg" />
-          <AgentRue>Agent William</AgentRue>
-          <Offline>Online</Offline>
-          <ChatTradeChild1 />
+          <MaskGroupIcon3 alt="" src="/mask-group-1.svg" />
+          <AgentRose>Agent Rose</AgentRose>
+          <Offline1>Offline</Offline1>
+          <ChatTradeChild2 />
+          <MaskGroupIcon4 alt="" src="/mask-group-1.svg" />
+          <AgentWilliam>Agent William</AgentWilliam>
+          <Online2>Online</Online2>
+          <ChatTradeChild3 />
           <LineDiv />
-          <Div>
-            <MaskGroupIcon loading="lazy" alt="" src="/oval-4-1.svg" />
-            <AgentJohnCount>10</AgentJohnCount>
-          </Div>
-          <Div1>
-            <MaskGroupIcon loading="lazy" alt="" src="/oval-4-1.svg" />
-            <AgentJohnCount>9</AgentJohnCount>
-          </Div1>
+          <Oval4Parent>
+            <Oval4Icon alt="" src="/oval-4-1.svg" />
+            <B>10</B>
+          </Oval4Parent>
+          <Oval4Group>
+            <Oval4Icon alt="" src="/oval-4-1.svg" />
+            <B>9</B>
+          </Oval4Group>
           <InputBox />
           <Path753Icon alt="" src="/path75-3.svg" />
           <Placeholder>Start typing here</Placeholder>
@@ -502,58 +646,120 @@ const Trade: FunctionComponent = () => {
             <Line />
           </Uilinegray>
           <Unread>Unread</Unread>
-          <Div2>
-            <Bg2 type="text" />
+          <Messageleft>
+            <Bg />
             <Text>
               Hello am new to this system can i get a breakdown on how it works?
             </Text>
             <Name>{`Me, 10.:22 `}</Name>
-          </Div2>
-          <Div3>
-            <Bg3 />
+          </Messageleft>
+          <Messageleft1>
+            <Bg1 />
             <Text1>Please, can you go into details bout the service</Text1>
             <Name1>Me, 3 minutes ago</Name1>
-          </Div3>
-          <Div4>
-            <Bg4 />
-            <ChatMessageInput>
-              Yes we currently run both on our platform here
-            </ChatMessageInput>
+          </Messageleft1>
+          <BgParent>
+            <Bg2 />
+            <Text2>Yes we currently run both on our platform here</Text2>
             <Name2>Agent Rue, 10:24</Name2>
-          </Div4>
-          <Div5>
-            <Bg2 type="text" />
+          </BgParent>
+          <Messageleft2>
+            <Bg />
             <Text>
               Hello am new to this system can i get a breakdown on how it works?
             </Text>
-            <Name>Agent Rue, 9 minutes ago</Name>
-          </Div5>
-          <Div6>
-            <Bg4 />
-            <ChatMessageInput>
-              Yes we currently run both on our platform here
-            </ChatMessageInput>
             <Name3>Agent Rue, 9 minutes ago</Name3>
-          </Div6>
+          </Messageleft2>
+          <BgGroup>
+            <Bg2 />
+            <Text2>Yes we currently run both on our platform here</Text2>
+            <Name4>Agent Rue, 9 minutes ago</Name4>
+          </BgGroup>
           <RectangleParent>
-            <FrameChild />
+            <GroupChild />
             <NewTrade>New Trade?</NewTrade>
           </RectangleParent>
         </ChatTrade>
         <CampaignsManagement>User Management Trade</CampaignsManagement>
         <Trade1>Trade</Trade1>
-        <Div7>
-          <TriangleIcon loading="lazy" alt="" src="/triangle.svg" />
+        <TriangleParent>
+          <TriangleIcon alt="" src="/triangle.svg" />
           <Accounts>Accounts</Accounts>
           <NikeS>RAMON RIDWAN</NikeS>
-          <Child loading="lazy" alt="" src="/line-22.svg" />
-        </Div7>
+          <GroupItem alt="" src="/line-22.svg" />
+        </TriangleParent>
         <Nav
-          navPadding="21px 106px 22px 65px"
+          navPadding="unset"
           group364="/group-364.svg"
           rectangleDivBorder="1px solid #fff"
+          navPosition="absolute"
+          navTop="0px"
+          navLeft="0px"
+          navWidth="1500px"
+          navHeight="83px"
+          navAlignSelf="unset"
+          navBackgroundColor="unset"
+          navBorder="unset"
+          navDisplay="unset"
+          navFlexDirection="unset"
+          navAlignItems="unset"
+          navJustifyContent="unset"
+          navGap="unset"
+          showRectangle
+          rectanglePosition="absolute"
+          rectangleTop="0px"
+          rectangleLeft="0px"
+          showRectangleDiv
+          rectangleDivPosition="absolute"
+          rectangleDivTop="21px"
+          rectangleDivLeft="722px"
+          maskGroupIconPosition="absolute"
+          maskGroupIconTop="23px"
+          maskGroupIconLeft="1196px"
+          ramonRidwanPosition="absolute"
+          ramonRidwanTop="35px"
+          ramonRidwanLeft="1243px"
+          groupIconTop="33.2px"
+          groupIconLeft="1377px"
+          groupIconMargin="unset"
+          groupIconBottom="unset"
+          showGroupDiv
+          groupDivPosition="absolute"
+          groupDivHeight="16.87%"
+          groupDivWidth="0.97%"
+          groupDivTop="34.94%"
+          groupDivRight="6.81%"
+          groupDivBottom="48.19%"
+          groupDivLeft="92.22%"
+          searchEgLivePosition="absolute"
+          searchEgLiveWidth="6.47%"
+          searchEgLiveTop="calc(50% - 6.5px)"
+          searchEgLiveLeft="52.47%"
+          searchEgLiveColor="#fff"
+          searchEgLiveHeight="16px"
+          searchEgLiveOpacity="0.5"
+          searchEgLiveMixBlendMode="normal"
+          searchEgLiveBorder="unset"
+          searchEgLiveOutline="unset"
+          searchEgLiveBackgroundColor="unset"
+          searchEgLivePadding="unset"
+          searchIconPosition="absolute"
+          searchIconHeight="15.66%"
+          searchIconWidth="0.9%"
+          searchIconTop="42.17%"
+          searchIconRight="48.7%"
+          searchIconBottom="42.17%"
+          searchIconLeft="50.4%"
+          searchIconOverflow="hidden"
+          searchIconMaxHeight="100%"
+          groupIconPosition="absolute"
+          groupIconTop1="35px"
+          groupIconLeft1="65px"
+          groupIconWidth="104px"
+          groupIconAlignSelf="unset"
+          groupIconOverflow="unset"
         />
-      </Div8>
+      </Trade2>
     </TradeRoot>
   );
 };
