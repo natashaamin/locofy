@@ -1,2 +1,0 @@
-# locofy
-design test
